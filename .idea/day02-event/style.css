@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #afafaf;
+    margin: 0;
+}
+
+.box {
+    width: 400px;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0 0 30px 0;
+}
+
+.class1, .class2, .class3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.class1 span, .class2 span, .class3 span {
+    font-size: 18px;
+    color: #333;
+}
+
+#btn1, #btn2, #btn3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover {
+    background-color: #555;
+}
+
+#math_num, #computer_num, #english_num {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    min-width: 40px;
+}
+
+#btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c00;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+#btn:hover {
+    background-color: #a00;
+}
