@@ -14,16 +14,16 @@ function render() {
       <span>${books[i].title}</span>
       <span>${books[i].author}</span>
       <span>${books[i].year}</span>
-      <button class="del_btn" data-index="${i}">删除</button>
+      <button class="del_btn">删除</button>
     `;
+    const del_btn = li.querySelector('.del_btn');
+    del_btn.addEventListener('click', function() {
+      books.splice(i, 1);
+      render();
+    });
     list.appendChild(li);
   }
 }
-list.addEventListener('click', function(e) {
-  const index = e.target.dataset.index;
-  books.splice(index, 1);
-  render()
-});
 btn.addEventListener('click', function() {
   const title = title_input.value;
   const author = author_input.value;
